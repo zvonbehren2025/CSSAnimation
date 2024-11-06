@@ -1,0 +1,38 @@
+#one {
+    animation-name: animation-one;
+    animation-duration: 5s;
+    animation-iteration-count: 100;
+    transition-timing-function: ease-in-out;
+    text-align: center;
+    background-color: aqua;
+    width: 25%;
+    animation-direction: alternate;
+    }
+
+#two{
+  animation-name: animation-two;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+    @keyframes animation-one {
+        33% {background-color: blue;}
+        66% {background-color: blueviolet;}
+        100% {background-color: aqua;}
+
+        33% {margin-left: 25%;}
+        66% {margin-left: 50%;}
+        100% {margin-left: 75%;}
+
+        33% {font-size: 125%;}
+        66% {font-size: 150%;}
+        100% {font-size: 175%;}
+      }
+
+    @keyframes animation-two {
+      0% {margin-left: 0%; transform: rotate(0deg); width: 100%; height: 100%;}
+      25% {margin-top:50%; transform: rotate(90deg); width: 75%; height: 75%;}
+      50% {margin-left: 50%; transform: rotate(180deg); width: 50%; height: 50%;}
+      75% {margin-top:0%; transform: rotate(270deg); width: 25%; height: 25%;}
+
+    }
